@@ -16,3 +16,5 @@ const CandidateList = ({ candidates }) => {
 };
 
 export default CandidateList;
+
+//
