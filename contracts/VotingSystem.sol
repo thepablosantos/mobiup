@@ -73,4 +73,13 @@ contract VotingSystem {
 
         return (candidates[winningIndex].name, highestVotes);
     }
-}
+
+    // Function to remove a candidate by index
+    function removeCandidate(uint _index) public onlyOwner {
+        require(_index < candidates.length, "Invalid candidate index");
+
+        // Replace the candidate to be removed with the last candidate
+        candidates[_index] = candidates[candidates.length - 1];
+        candidates.pop(); // Remove the last candidate (which is now a duplicate)
+    }
+} // kkkkk
