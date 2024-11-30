@@ -82,4 +82,4 @@ contract VotingSystem {
         candidates[_index] = candidates[candidates.length - 1];
         candidates.pop(); // Remove the last candidate (which is now a duplicate)
     }
-} 
+} // ola
