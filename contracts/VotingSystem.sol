@@ -31,7 +31,7 @@ contract VotingSystem {
         votingEnd = _votingEnd;
     }
 
-    // Modifier to restrict access to the owner
+    
     modifier onlyOwner() {
         require(msg.sender == owner, "Only the owner can register candidates");
         _;
